@@ -6,4 +6,4 @@ RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 COPY server.jar /server.jar
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["java", "-Dspring.profiles.active=production", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/server.jar"]
+CMD ["java", "-Dspring.profiles.active=docr", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/server.jar"]
