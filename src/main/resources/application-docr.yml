@@ -1,0 +1,14 @@
+
+mqtt:
+  url: "tcp://127.0.0.1:1883"
+  clientId: "clientid"
+  username: "username"
+  password: "password"
+  topics: "bedlight"
+  use: true
+server:
+  port: 8080
+api:
+  title: "Yeelight Control Server"
+  description: "Discovery and control server for Yeelight"
+  version: "1"
